@@ -74,7 +74,7 @@ axes[1].set_xlabel('C (Regularization)')
 axes[1].set_ylabel('Accuracy')
 
 plt.tight_layout()
-plt.savefig('cv_results_mjob_pca.png')
+plt.savefig('cv_results_pass_fail_pca.png')
 
 
 
