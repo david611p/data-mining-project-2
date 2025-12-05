@@ -64,12 +64,12 @@ svm_df = pd.DataFrame(svm_results)
 fig, axes = plt.subplots(1, 2, figsize=(14, 6))
 
 sns.barplot(x='n_estimators', y='Accuracy', data=rf_df, ax=axes[0])
-axes[0].set_title('Random Forest CV Results (Mjob with PCA)')
+axes[0].set_title('Random Forest CV Results (Pass/Fail with PCA)')
 axes[0].set_xlabel('n_estimators')
 axes[0].set_ylabel('Accuracy')
 
 sns.barplot(x='C', y='Accuracy', data=svm_df, ax=axes[1])
-axes[1].set_title('SVM CV Results (Mjob with PCA)')
+axes[1].set_title('SVM CV Results (Pass/Fail with PCA)')
 axes[1].set_xlabel('C (Regularization)')
 axes[1].set_ylabel('Accuracy')
 
